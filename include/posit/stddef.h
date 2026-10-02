@@ -5,5 +5,6 @@
 #include <posit_impl/posit_impl.h>
 #include <posit_impl/posit_impl_type_size.h>
 #include <posit_impl/posit_impl_type_wchar.h>
+#include <posit_impl/posit_impl_type_wint.h>
 
 #endif
