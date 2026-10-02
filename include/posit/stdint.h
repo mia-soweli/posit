@@ -4,6 +4,5 @@
 
 #include <posit_impl/posit_impl.h>
 #include <posit_impl/posit_impl_type.h>
-#include <posit_impl/posit_impl_type_limit.h>
 
 #endif
