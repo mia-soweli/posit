@@ -2,7 +2,7 @@
 #define __posit_impl_limits_h__
 #define __posit_impl_limits_h_included__
 
-/* §5.2.4.2.1 sizes of integer types */
+/* ISO/IEC 9899:1999 §5.2.4.2.1 sizes of integer types */
 #define CHAR_BIT 8
 
 #define CHAR_MIN ((char)0x80)
