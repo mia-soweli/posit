@@ -6,8 +6,6 @@
 
 #define __STDC_VERSION__ 199901L
 
-#define const
-
 #include <u.h>
 #include <libc.h>
 
