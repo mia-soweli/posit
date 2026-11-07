@@ -6,5 +6,9 @@ CFLAGS=$CFLAGS -p -I../include/posit -I../include
 OFILES=\
 	posit_impl_error.$O\
 	posit_impl_exit.$O\
+	posit_impl_memccpy.$O\
+	posit_impl_memcpy.$O\
+	posit_impl_memmove.$O\
+	posit_impl_memset.$O\
 
 </sys/src/cmd/mksyslib
