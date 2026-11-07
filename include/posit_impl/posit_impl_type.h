@@ -3,16 +3,16 @@
 #define __posit_impl_type_h_included__
 
 /* ISO/IEC 9899:1999 §7.18.1.1 ¶1 exact-width integer types */
-typedef s8int int8_t;
-typedef s16int int16_t;
-typedef s32int int32_t;
-typedef s64int int64_t;
+typedef signed char int8_t;
+typedef signed short int int16_t;
+typedef signed long int int32_t;
+typedef signed long long int64_t;
 
 /* ISO/IEC 9899:1999 §7.18.1.1 ¶2 exact-width integer types */
-typedef u8int uint8_t;
-typedef u16int uint16_t;
-typedef u32int uint32_t;
-typedef u64int uint64_t;
+typedef unsigned char uint8_t;
+typedef unsigned short int uint16_t;
+typedef unsigned long int uint32_t;
+typedef unsigned long long int uint64_t;
 
 /* ISO/IEC 9899:1999 §7.18.1.2 ¶1 minimum-width integer types */
 typedef int8_t int_least8_t;
@@ -39,16 +39,16 @@ typedef uint32_t uint_fast32_t;
 typedef uint64_t uint_fast64_t;
 
 /* ISO/IEC 9899:1999 §7.18.1.4 ¶1 integer types capable of holding object pointers */
-typedef intptr intptr_t;
+typedef signed long long int intptr_t;
 
 /* ISO/IEC 9899:1999 §7.18.1.4 ¶2 integer types capable of holding object pointers */
-typedef uintptr uintptr_t;
+typedef unsigned long long int uintptr_t;
 
 /* ISO/IEC 9899:1999 §7.18.1.5 ¶1 greatest-width integer types */
-typedef s64int intmax_t;
+typedef signed long long int intmax_t;
 
 /* ISO/IEC 9899:1999 §7.18.1.5 ¶1 greatest-width integer types */
-typedef s64int intmax_t;
+typedef unsigned long long int uintmax_t;
 
 /* ISO/IEC 9899:1999 §7.18.2.1 limits of exact-width integer types */
 #define INT8_MIN ((int8_t)0x80)

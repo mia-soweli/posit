@@ -3,6 +3,6 @@
 #define __posit_impl_type_wint_h_included__
 
 /* ISO/IEC 9899:1999 §7.17 ¶1 common definitions */
-typedef Rune wint_t;
+typedef unsigned int wint_t;
 
 #endif

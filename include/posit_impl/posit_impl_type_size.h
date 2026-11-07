@@ -3,6 +3,6 @@
 #define __posit_impl_type_size_included_h__
 
 /* ISO/IEC 9899:1999 §7.17 ¶1 common definitions */
-typedef usize size_t;
+typedef unsigned long long int size_t;
 
 #endif
