@@ -4,4 +4,6 @@
 
 #pragma lib "libposit_impl.a"
 
+#include <u.h>
+
 #endif
