@@ -8,7 +8,7 @@
 #define memccpy __posit_impl_memccpy
 #define memchr __posit_impl_memchr
 #define memcmp __posit_impl_memcmp
-#define memcpy__posit_impl_memcpy
+#define memcpy __posit_impl_memcpy
 #define memmove __posit_impl_memmove
 #define memset __posit_impl_memset
 
