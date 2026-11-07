@@ -3,13 +3,13 @@
 #define __posit_string_h_included__
 
 #include <posit_impl/posit_impl.h>
-#include <posit_impl/posit_impl_string.h>
+#include <posit_impl/posit_impl_type_size.h>
 
-#define memccpy __posit_impl_memccpy
-#define memchr __posit_impl_memchr
-#define memcmp __posit_impl_memcmp
-#define memcpy __posit_impl_memcpy
-#define memmove __posit_impl_memmove
-#define memset __posit_impl_memset
+extern void* memccpy(void *restrict, const void *restrict, int, size_t);
+extern void* memchr(const void *, int, size_t);
+extern int memcmp(const void *, const void *, size_t);
+extern void* memcpy(void *restrict, const void *restrict, size_t);
+extern void* memmove(void *, const void *, size_t);
+extern void* memset(void *, int, size_t);
 
 #endif
