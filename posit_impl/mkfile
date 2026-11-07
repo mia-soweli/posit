@@ -4,6 +4,7 @@ LIB=/$objtype/lib/libposit_impl.a
 CFLAGS=$CFLAGS -p -I../include/posit -I../include
 
 OFILES=\
-	posit_impl_error.$O
+	posit_impl_error.$O\
+	posit_impl_exit.$O\
 
 </sys/src/cmd/mksyslib

@@ -4,6 +4,4 @@
 
 #pragma lib "libposit_impl.a"
 
-#define __STDC_VERSION__ 199901L
-
 #endif
