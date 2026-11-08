@@ -26,7 +26,7 @@ __posit_impl_clock_nanosleep(clockid_t clock_id, int, struct timespec *time, str
 		tn.tv_nsec += 1000000000LL;
 	}
 
-	while (__posit_impl_clock_gettime(clock_id, &t) > 0) {
+	while (__posit_impl_clock_gettime(clock_id, &t) >= 0) {
 		if (t.tv_sec > tn.tv_sec)
 			return 0;
 		if (t.tv_sec == tn.tv_sec && t.tv_nsec > tn.tv_nsec)
