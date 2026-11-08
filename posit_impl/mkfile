@@ -4,6 +4,10 @@ LIB=/$objtype/lib/libposit_impl.a
 CFLAGS=$CFLAGS -p -I../include/posit -I../include
 
 OFILES=\
+	posit_impl_clock_getres.$O\
+	posit_impl_clock_gettime.$O\
+	posit_impl_clock_settime.$O\
+	posit_impl_clock_nanosleep.$O\
 	posit_impl_error.$O\
 	posit_impl_exit.$O\
 
