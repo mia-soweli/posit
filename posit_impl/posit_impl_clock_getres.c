@@ -4,8 +4,20 @@
 #include <posit_impl/posit_impl_error_number.h>
 
 int
-__posit_impl_clock_getres(clockid_t, struct timespec *)
+__posit_impl_clock_getres(clockid_t clock, struct timespec * clock_time)
 {
-	__posit_impl_error = EINVAL;
-	return -1;
+	switch (clock) {
+	case CLOCK_REALTIME:
+	case CLOCK_MONOTONIC:
+		/* FIXME(mia): clock resolution is a lie*/
+		tv->tv_sec = 0;
+		tv->tv_nsec = 1;
+		break;
+
+	default:
+		__posit_impl_error = EINVAL;
+		return -1;
+	}
+
+	return 0;
 }
