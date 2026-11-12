@@ -10,5 +10,7 @@ OFILES=\
 	posit_impl_clock_nanosleep.$O\
 	posit_impl_error.$O\
 	posit_impl_exit.$O\
+	posit_impl_gettimeofday.$O\
+	posit_impl_settimeofday.$O\
 
 </sys/src/cmd/mksyslib
