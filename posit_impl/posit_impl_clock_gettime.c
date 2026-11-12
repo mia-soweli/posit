@@ -30,7 +30,8 @@ __posit_impl_clock_gettime(clockid_t clock, struct timespec * clock_time)
 		break;
 
 	default:
-		return -EINVAL;
+		__posit_impl_error = EINVAL;
+		return -1;
 	}
 
 	time_t t_ns_q = c / c_cycles;

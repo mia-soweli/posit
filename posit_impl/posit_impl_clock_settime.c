@@ -8,5 +8,6 @@
 int
 __posit_impl_clock_settime(clockid_t, const struct timespec *)
 {
-	return -EINVAL;
+	__posit_impl_error = EINVAL;
+	return -1;
 }

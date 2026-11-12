@@ -6,5 +6,6 @@
 int
 __posit_impl_clock_getres(clockid_t, struct timespec *)
 {
-	return -EINVAL;
+	__posit_impl_error = EINVAL;
+	return -1;
 }

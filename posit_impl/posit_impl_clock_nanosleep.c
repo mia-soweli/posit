@@ -11,7 +11,8 @@ __posit_impl_clock_nanosleep(clockid_t clock_id, int, struct timespec *time, str
 	struct timespec t;
 	struct timespec tn;
 
-	__posit_impl_clock_gettime(clock_id, &t);
+	if (__posit_impl_clock_gettime(clock_id, &t) < 0)
+		return -1;
 
 	tn.tv_sec = t.tv_sec + time->tv_sec;
 	tn.tv_nsec = t.tv_nsec + time->tv_nsec;
@@ -33,5 +34,5 @@ __posit_impl_clock_nanosleep(clockid_t clock_id, int, struct timespec *time, str
 			return 0;
 	}
 
-	return 0;
+	return -1;
 }
